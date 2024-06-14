@@ -1,0 +1,206 @@
+@import url(/assets/fonts.css);
+
+/* *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    list-style: none; 
+  }  */
+
+
+
+@import url(/assets/fonts.css);
+
+/* Base styles */
+.rec_header {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background: none;
+    text-decoration: none;
+    list-style: none;
+
+    width: 100%;
+    max-width: 2054px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.rec_bg {
+    width: 40%;
+    height: 54%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: -2;
+    left: 790px;
+    top: 207px;
+}
+
+.rec_header-content {
+    width: 100%;
+    max-width: 1240px;
+    height: 535px;
+    padding-top: 30px;
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.rec_header-content-img {
+    width: 601px;
+    height: 368px;
+}
+
+.rec_header-content-text {
+    width: 100%;
+    max-width: 447px;
+    height: 475px;
+    gap: 57px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rec_header-content-h {
+    font-family: N7;
+    font-size: 21px;
+}
+
+.rec_header-content-p {
+    width: 100%;
+    max-width: 539px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    gap: 57px;
+    font-family: N4;
+    font-size: 19.5px;
+}
+
+.rec_header-content-p p {
+    font-size: 16px;
+}
+
+/* Responsive Images */
+.rec_header-content-img img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Media queries */
+@media (max-width: 1440px) {
+    .rec_header {
+        max-width: 1440px;
+    }
+
+    .rec_header-content {
+        max-width: 1200px;
+    }
+
+    .rec_bg {
+        width: 63%;
+        height: 45%;
+        left: 445px;
+        bottom: 315px;
+    }
+
+    .rec_header-content-p {
+        font-size: 18px;
+    }
+
+    .rec_header-content-h {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .rec_header {
+        max-width: 1024px;
+    }
+
+    .rec_header-content {
+        max-width: 980px;
+        gap: 35px;
+    }
+
+    .rec_bg {
+        width: 65%;
+        height: 35%;
+        left: 320px;
+        bottom: 420px;
+    }
+
+    .rec_header-content-p {
+        font-size: 14px;
+    }
+
+    .rec_header-content-h {
+        font-size: 15px;
+    }
+
+    .rec_header-content-img {
+        width: 480px;
+        height: auto;
+    }
+
+    .rec_header-content-text {
+        width: 390px;
+    }
+}
+
+@media (max-width: 768px) {
+    .rec_header {
+        max-width: 768px;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; /* Ensure content is centered */
+        margin: 0 auto;
+    }
+
+    .rec_header-content {
+        width: 100%;
+        max-width: 730px; /* Adjust to fit within the screen */
+        flex-direction: column;
+        gap: 20px;
+        align-items: center; /* Center content horizontally */
+        padding: 0 15px; /* Add some padding to ensure content doesn't touch the edges */
+    }
+
+    .rec_header-content-text {
+        width: 100%; /* Full width */
+        max-width: 100%; /* Remove max-width constraint */
+        gap: 20px;
+        text-align: center; /* Center text */
+    }
+
+    .rec_header-content-img {
+        width: 100%; /* Full width */
+        height: auto;
+    }
+
+    .rec_header-content-p {
+        font-size: 14px; /* Slightly increase font size for better readability */
+    }
+
+    .rec_header-content-h {
+        font-size: 16px; /* Slightly increase font size for better readability */
+    }
+
+    .rec_bg {
+        width: 100%;
+        height: auto;
+        left: 0; /* Center background image */
+        top: 0; /* Position from the top */
+        bottom: initial; /* Reset bottom positioning */
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/under_welfare.css">
+</head>
+<body>
+    <section class="under_welfare main_section">
+        <div class="under_welfare_container">
+      
+          <!-- {% for item in module.under_welfare %}
+          <div class="{{ 'under_welfare_border_red' if item.color_choice == 'red' else 'under_welfare_border_green' }} under_welfare_border">
+            <h3 class="under_welfare_h3">{{ item.under_welfare_h3 }}</h3>
+            <hr class="{{ 'under_welfare_hr_red' if item.color_choice == 'red' else 'under_welfare_hr_green' }} under_welfare_hr" />
+            <img
+                 src="{{ item.under_welfare_img.src }}"
+                 alt=""
+                 class="under_welfare_img"
+                 />
+            <h4 class="under_welfare_h4">
+              {{ item.under_welfare_h4 }}
+            </h4>
+          </div>
+          {% endfor %} -->
+
+          <div class="under_welfare_border_red under_welfare_border">
+            <h3 class="under_welfare_h3">{{ item.under_welfare_h3 }}</h3>
+            <hr class="{{ 'under_welfare_hr_red' if item.color_choice == 'red' else 'under_welfare_hr_green' }} under_welfare_hr" />
+            <img
+                 src="{{ item.under_welfare_img.src }}"
+                 alt=""
+                 class="under_welfare_img"
+                 />
+            <h4 class="under_welfare_h4">
+              {{ item.under_welfare_h4 }}
+            </h4>
+          </div>
+
+          <div class="under_welfare_border_green under_welfare_border">
+            <h3 class="under_welfare_h3">{{ item.under_welfare_h3 }}</h3>
+            <hr class="{{ 'under_welfare_hr_red' if item.color_choice == 'red' else 'under_welfare_hr_green' }} under_welfare_hr" />
+            <img
+                 src="{{ item.under_welfare_img.src }}"
+                 alt=""
+                 class="under_welfare_img"
+                 />
+            <h4 class="under_welfare_h4">
+              {{ item.under_welfare_h4 }}
+            </h4>
+          </div>
+
+        </div>
+      </section>
+
+
+</body>
+</html>

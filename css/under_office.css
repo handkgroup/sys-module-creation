@@ -1,0 +1,145 @@
+.under_office {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    height: 100%;
+}
+
+.header-image {
+    width: 60%;
+    height: auto;
+}
+
+.header-text {
+    background-color: antiquewhite;
+    display: flex;
+    height: 496px;
+    width: 40%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 57px;
+    margin-top: 125px;
+    background: var(--white, #FFF);
+    box-shadow: 4px 4px 7.2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.header-text p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.gap {
+    height: 30px;
+}
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.gallery-image {
+    width: 32%;
+    height: auto;
+}
+
+/* header-text responsive start */
+@media (max-width:1668px){
+    .header-text{
+        height: calc(496px * 0.80);
+    }
+    .header-text h1 {
+        margin: 0;
+        font-size: calc(24px * 0.9);
+    }
+    
+    .header-text p {
+        margin: 0;
+        font-size: calc(16px * 0.9);
+    }
+    
+}
+@media (max-width:1340px){
+    .header-text{
+        height: calc(496px * 0.70);
+
+    }
+}
+@media (max-width:1110px){
+    .header-text{
+        height: calc(496px * 0.60);
+
+    }
+}
+@media (max-width:1000px){
+    .header-text{
+        height: calc(496px * 0.50);
+
+    }
+    .header-text h1 {
+        margin: 0;
+        font-size: calc(24px * 0.8);
+    }
+    
+    .header-text p {
+        margin: 0;
+        font-size: calc(16px * 0.8);
+    }
+}
+/* header-text responsive end */
+
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-image, .header-text {
+        width: 100%;
+    }
+    .header-text{
+        margin-top: 0;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .gallery-image {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-text h1 {
+        font-size: 20px;
+    }
+
+    .header-text p {
+        font-size: 14px;
+    }
+
+    .gap {
+        height: 20px;
+    }
+}

@@ -1,0 +1,97 @@
+.cardSection_2 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 30px;
+}
+
+/* cart-1  start*/
+.cardSection_2_card_1 {
+    display: flex;
+    gap: 70px;
+}
+
+.sysAchievement {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.sysAchievement-line {
+    width: 21px;
+    height: 1px;
+    background: linear-gradient(90deg, #C7D036 -13.72%, #01BE02 31.82%);
+}
+
+.cardSection-line {
+    margin-top: 70px;
+    width: 1226px;
+    height: 0.5px;
+    background: linear-gradient(90deg, #C7D036 -13.72%, #01BE02 31.82%);
+}
+/* cart-1 end */
+
+/* cart-2  start*/
+.cardSection_2_card_2 {
+    display: flex;
+    gap: 70px;
+}
+
+.sysAchievement {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.sysAchievement-line {
+    width: 21px;
+    height: 1px;
+    background: linear-gradient(90deg, #C7D036 -13.72%, #01BE02 31.82%);
+}
+
+.cardSection-line {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 1226px;
+    height: 0.5px;
+    background: linear-gradient(90deg, #C7D036 -13.72%, #01BE02 31.82%);
+}
+/* cart-2 end */
+
+@media (max-width: 1220px){
+    .cardSection_2_card_1 {
+        display: grid;
+        gap: 70px;
+    }
+
+    .cardSection_2_card_1_left{
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .cardSection_2_card_1_right{
+        width: 90%;
+        display: flex;
+        margin: 0 auto;
+    }
+    .cardSection_2_card_1_right img{
+        width: 100%;
+    
+    }
+
+    .cardSection_2_card_2 {
+        display: grid;
+        gap: 70px;
+    }
+}

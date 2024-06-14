@@ -1,0 +1,113 @@
+.under_welfare_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 60px;
+    grid-gap: 2%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    max-width: 1200;
+}
+
+.centered_row {
+    display: grid;
+    grid-auto-flow: column;
+    grid-column: span 2;
+    column-gap: 2%;
+    justify-content: center;
+    margin-left: 50%;
+    /* max-width: 50%; */
+}
+
+.under_welfare_border {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 30px 60px;
+}
+
+.under_welfare_border_red {
+    border: 2px solid #CF0505;
+}
+
+.under_welfare_border_green {
+    border: 2px solid #089C74;
+}
+
+.under_welfare_h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 10px;
+}
+
+.under_welfare_h3, .under_welfare_h4 {
+    /*     text-align: center; */
+}
+
+.under_welfare_hr {
+    font-size: 20px;
+    font-weight: 500;
+    width: 22%
+}
+
+.under_welfare_hr_red {
+    border: 0.5px solid #CF0505;
+}
+
+.under_welfare_hr_green {
+    border: 0.5px solid #089C74;
+}
+
+.under_welfare_img {
+    height: 70%;
+    /*     height: auto; */
+}
+
+/* For Responcive design */
+@media (max-width: 1090px) {
+    .under_welfare_container {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: normal;
+    }
+
+    .centered_row {
+        grid-column: span 1;
+        margin-left: 1%;
+        /* grid-auto-flow: row; */
+    }
+
+    .centered_row> :nth-child(2) {
+        grid-row-start: 3;
+    }
+}
+
+@media (max-width: 710px) {
+    .under_welfare_container {
+        grid-template-columns: 1fr;
+    }
+
+    .centered_row {
+        grid-template-columns: 1fr;
+        margin-left: 0;
+        grid-auto-flow: row;
+        gap: 5% !important;
+    }
+
+    .centered_row> :nth-child(2) {
+        grid-row-start: auto;
+    }
+}
+
+
+@media (max-width: 350px) {
+    .under_welfare_border {
+        padding: 10px 30px;
+        margin: 10px;
+        /* box-shadow: 5px 5px 5px #888888; */
+    }
+}

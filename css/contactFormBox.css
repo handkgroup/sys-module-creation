@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.contactFormBox {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-decoration: none;
+    max-width: 1200px;
+    width: 100%;
+    padding: 40px 30px;
+}
+
+/* left-content start*/
+.form_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form_info_p {
+    margin-bottom: 70px;
+}
+
+.sysAchievement {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+}
+
+.sysAchievement-line {
+    width: 21px;
+    height: 1px;
+    background: linear-gradient(90deg, #C7D036 -13.72%, #01BE02 31.82%);
+}
+
+.form_info-card {
+    background-image: url(../img/unsplash_pVt9j3iWtPM\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 550px;
+    margin-bottom: 70px;
+    padding: 40px;
+}
+
+.form_info_card_layout {
+    color: white;
+    display: flex;
+    height: 483px;
+    padding: 17px 0px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-shrink: 0;
+    align-self: stretch;
+    border: 2.284px solid var(--white, #FFF);
+}
+
+.form_info_card_layout_p {
+    font-size: 40px;
+}
+
+/* left-content end */
+
+/* right-content start */
+.formbox_form_layout {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 40px 50px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.formbox_form{
+    width: 100%;
+}
+
+.formbox_input span{
+    color: red;
+}
+
+.formbox_form label{
+    text-align: left;
+}
+
+.formbox_form input{
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+.formbox_form input[type=text]{
+    border: none;
+    border-bottom: .5px solid black;
+}
+
+
+
+
+
+/* right-content start */
+
+@media (max-width:1220px) {
+    .contactFormBox {
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 70px;
+        box-sizing: border-box;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        text-decoration: none;
+        max-width: 1200px;
+        width: 100%;
+        padding: 40px 30px;
+    }
+}

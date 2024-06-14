@@ -1,0 +1,58 @@
+.richtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+
+.h2 {
+    font-size: 3.2rem;
+    text-align: center;
+}
+
+.h2-line {
+    width: 51px;
+    height: 1px;
+    background-color: #cf0505;
+
+}
+
+@media (max-width: 500px) {
+    .richtext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .h2 {
+        font-size: 2.5rem;
+    }
+
+    .h2-line {
+        width: 31px;
+        height: 1px;
+        background-color: #cf0505;
+
+    }
+}
+
+@media (max-width: 375px) {
+    .richtext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .h2 {
+        font-size: 2rem;
+    }
+
+    .h2-line {
+        width: 31px;
+        height: 1px;
+        background-color: #cf0505;
+
+    }
+}

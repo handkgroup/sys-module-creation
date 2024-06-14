@@ -1,0 +1,33 @@
+.sysNumber_1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px;
+    background: #303030;
+    padding: 33px 51px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 40px;
+}
+
+.sysNumber_1 p, img, h1{
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media (max-width:1220px){
+    .sysNumber_1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-radius: 20px;
+        background: #303030;
+        padding: 33px 51px;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+        gap: 40px;
+    }
+}
